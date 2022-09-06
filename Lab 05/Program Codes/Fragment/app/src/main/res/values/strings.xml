@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fragment - Tab Layout</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_1_home">Fragment 1 - Home</string>
+    <string name="fragment_2_notification">Fragment 2 - Notification</string>
+    <string name="fragment_3_profile">Fragment 3 - Profile</string>
+</resources>

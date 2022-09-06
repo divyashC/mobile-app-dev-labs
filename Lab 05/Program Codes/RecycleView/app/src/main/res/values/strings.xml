@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recycler View</string>
+    <string name="days_of_week">Days of Week</string>
+    <string name="monday">Monday</string>
+</resources>

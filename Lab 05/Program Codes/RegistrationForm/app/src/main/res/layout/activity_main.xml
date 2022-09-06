@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20sp" android:orientation="vertical">
+
+        <TextView android:id="@+id/header_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/app_name" android:textAlignment="center" android:textColor="#000000" android:textSize="30sp" android:textStyle="bold" />
+
+        <EditText android:id="@+id/name_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50sp" android:hint="@string/enter_name"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="40sp" android:layout_marginTop="30sp" android:orientation="horizontal">
+
+            <TextView android:id="@+id/gender_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:layout_marginEnd="30sp" android:layout_weight="1" android:text="@string/gender" android:textAlignment="center" android:textColor="#000000" android:textSize="20sp" />
+
+            <RadioGroup android:id="@+id/radio_group" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="2" android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/male_btn" android:layout_width="99dp" android:layout_height="match_parent" android:text="@string/male" android:textColor="#000000" android:textSize="18sp" tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton android:id="@+id/female_btn" android:layout_width="114dp" android:layout_height="match_parent" android:text="@string/female" android:textColor="#000000" android:textSize="18sp" tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText android:id="@+id/phone_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30sp" android:hint="@string/enter_phone_number"/>
+
+        <EditText android:id="@+id/email_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30sp" android:hint="@string/enter_email_address"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="40sp" android:layout_marginTop="30sp" android:orientation="horizontal">
+
+            <TextView android:id="@+id/married_label" android:layout_width="95dp" android:layout_height="wrap_content" android:layout_marginEnd="40sp" android:layout_weight="1" android:text="@string/married" android:textAlignment="center" android:textColor="#000000" android:textSize="20sp" />
+
+            <ToggleButton android:id="@+id/toggleButton" android:layout_width="105dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="#7986CB" android:textColor="#000000" android:textOff="@string/yes" android:textOn="@string/no" android:textSize="18sp" android:textStyle="bold" tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/qualification_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30sp" android:layout_weight="1" android:text="@string/qualification" android:textAlignment="center" android:textColor="#000000" android:textSize="20sp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="40sp" android:layout_marginTop="15sp" android:orientation="horizontal">
+
+
+            <CheckBox android:id="@+id/std" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/student" tools:ignore="TouchTargetSizeCheck" />
+
+            <CheckBox android:id="@+id/grad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/graduate" tools:ignore="TouchTargetSizeCheck" />
+
+            <CheckBox android:id="@+id/undergrad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/under_graduate" tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/address_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30sp" android:layout_weight="1" android:text="@string/address" android:textAlignment="center" android:textColor="#000000" android:textSize="20sp" />
+
+        <EditText android:id="@+id/gewog_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10sp" android:hint="@string/enter_gewog"/>
+
+        <Spinner android:id="@+id/dzo_spinner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" android:layout_weight="1" android:ems="10" android:entries="@array/dzongkhag" android:minHeight="48dp" android:text="@string/dzongkhag" />
+
+        <Spinner android:id="@+id/country_spinner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" android:layout_weight="1" android:ems="10" android:entries="@array/Country" android:minHeight="48dp" android:text="@string/country" />
+
+        <Button android:layout_marginTop="50dp" android:layout_marginStart="125dp" android:layout_marginBottom="40dp" android:id="@+id/submit_button" android:layout_width="125dp" android:layout_height="wrap_content" android:backgroundTint="#1565C0" android:text="@string/submit" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/floatingActionButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="300dp" android:layout_marginBottom="40dp" android:clickable="true" android:onClick="showAlert" app:backgroundTint="#90CAF9" app:srcCompat="@drawable/help" />
+
+    </LinearLayout>
+
+</ScrollView>
