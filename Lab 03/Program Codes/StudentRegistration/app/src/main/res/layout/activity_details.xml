@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <TextView
+        android:id="@+id/module_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0F3D3E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/academic_year_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/academic_year_display"
+        app:layout_constraintTop_toBottomOf="@+id/academic_year_display" />
+
+    <TextView
+        android:id="@+id/academic_year_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0F3D3E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/semester_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/semester_display"
+        app:layout_constraintTop_toBottomOf="@+id/semester_display" />
+
+    <TextView
+        android:id="@+id/semester_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0F3D3E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/year_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/year_display"
+        app:layout_constraintTop_toBottomOf="@+id/year_display" />
+
+    <TextView
+        android:id="@+id/year_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0F3D3E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/programme_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/programme_display"
+        app:layout_constraintTop_toBottomOf="@+id/programme_display" />
+
+    <TextView
+        android:id="@+id/programme_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0F3D3E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/student_id_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/student_id_display"
+        app:layout_constraintTop_toBottomOf="@+id/student_id_display" />
+
+    <TextView
+        android:id="@+id/academic_year_label_2"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Academic Year:"
+        android:textAlignment="textEnd"
+        android:textColor="#2B4865"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/semester_label_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/semester_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/semester_label_2" />
+
+    <TextView
+        android:id="@+id/programme_label_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Programme:"
+        android:textAlignment="textEnd"
+        android:textColor="#2B4865"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/student_id_label_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/student_id_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/student_id_label_2" />
+
+    <TextView
+        android:id="@+id/module_label_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Modules:"
+        android:textAlignment="textEnd"
+        android:textColor="#2B4865"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/academic_year_label_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/academic_year_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/academic_year_label_2" />
+
+    <TextView
+        android:id="@+id/year_label_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Year:"
+        android:textAlignment="textEnd"
+        android:textColor="#2B4865"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/programme_label_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/programme_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/programme_label_2" />
+
+    <TextView
+        android:id="@+id/name_label_2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Name:"
+        android:textColor="#2B4865"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdetails"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/name_display"
+        android:layout_width="202dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0F3D3E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/name_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/tvdetails" />
+
+    <TextView
+        android:id="@+id/student_id_display"
+        android:layout_width="204dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0F3D3E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/name_display"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/name_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/name_display" />
+
+    <TextView
+        android:id="@+id/semester_label_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Semester:"
+        android:textAlignment="textEnd"
+        android:textColor="#2B4865"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/year_label_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/year_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/year_label_2" />
+
+    <TextView
+        android:id="@+id/student_id_label_2"
+        android:layout_width="126dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Student ID:"
+        android:textAlignment="textEnd"
+        android:textColor="#2B4865"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/name_label_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/name_label_2"
+        app:layout_constraintTop_toBottomOf="@+id/name_label_2" />
+
+    <TextView
+        android:id="@+id/tvdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Student Details"
+        android:textAlignment="center"
+        android:textColor="#293462"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
