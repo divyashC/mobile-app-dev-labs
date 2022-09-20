@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Broadcast</string>
+    <string name="send_custom_broadcast">SEND CUSTOM BROADCAST</string>
+    <string name="send_local_broadcast">SEND LOCAL BROADCAST</string>
+</resources>
